@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rҽ:UNioN the animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header / ハンバーガーメニュー -->
+    <header class="site-header">
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav class="site-nav" id="site-nav">
+            <ul>
+                <li><a href="#hero">トップ</a></li>
+                <li>|</li>
+                <li><a href="#video-container">PV</a></li>
+                <li>|</li>
+                <li><a href="#protagonist-grid">英雄</a></li>
+                <li>|</li>
+                <li><a href="#enemy-wrapper">世界の敵</a></li>
+                <li>|</li>
+                <li><a href="#info-list">お知らせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/top.png" alt="Hero Background">
+        </div>
+        <div class="hero-content">
+            <div class="logo">Rҽ:UNioN</div>
+            <div class="logo subtitle">THE ANIMATION</div>
+            <div class="tagline">世界を救った英雄は、次なる世界の敵となる。</div>
+        </div>
+    </section>
+
+    <!-- PV Section -->
+    <section class="pv-section">
+        <h2 class="section-title">PV</h2>
+        <div class="video-container" id="video-container">
+            <div class="video-placeholder" id="video-placeholder">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Info / 作品情報 -->
+    <section class="work-info-section">
+        <div class="work-info-bg">
+            <img src="images/sakuhin.png" alt="作品背景">
+        </div>
+        <div class="work-info-content">
+            <h2 class="section-title">あらすじ</h2>
+            <p>かつて、11人の英雄たちは魔王を討伐し世界に平和をもたらした。
+                人々は彼らを英雄として讃えた。しかし勝利の瞬間、
+                一人の英雄――剣姫として名を轟かせていた彼女は、魔王の最後の力と
+                世界そのものの真理に触れる。その瞬間、彼女の心には世界の“真の姿”が流れ込む。
+                人々が称える正義は偽りで、栄光の裏には無数の犠牲と搾取、支配と欺瞞が存在していた。
+                神と呼ばれる存在も民を導くと称しながら、ただの秩序維持のために無数の命を弄んでいた。
+                世界を救った英雄として讃えられる自分。しかしその手の平には、欺瞞と絶望しかなかった。
+                心の奥底で芽生えたのは、怒りでも哀しみでもなく、世界への冷徹な絶望だった。
+                そして彼女は決意する。
+                「この世界は、救う価値などない……ならば、破壊して新たな秩序を築くまで」
+                こうしてかつての仲間たちの眼前で、彼女は闇に堕ち世界の敵となる。
+                かつての英雄たちは、愛した世界を守るため、かつての仲間――世界の敵となった友――と戦わざるを得なくなる。
+                絶望に染まった英雄が織りなす新たな秩序と、彼女を止めようとする旧友たちの戦い。
+                正義も悪も曖昧な世界で、誰が本当に「救うべき者」なのか――その答えは、戦いの果てにのみ示される。
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Characters Section -->
+    <section class="characters-section">
+        <h2 class="section-title">
+            Hero
+            <span class="sub">救世の勇者</span>
+        </h2>
+        <div id="protagonist-grid" class="character-grid"></div>
+    </section>
+
+    <!-- Enemy Section -->
+    <section class="characters-section enemy">
+        <h2 class="section-title">World Enemy <span class="sub">世界の敵</span></h2>
+        <div id="enemy-wrapper" class="character-wrapper"></div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <h2 class="section-title">お知らせ</h2>
+        <div id="info-list" class="info-list"></div>
+    </section>
+
+    <!-- Information Section の最後に追加 -->
+    <section class="info-section">
+        <div id="info-list" class="info-list"></div>
+
+        <!-- お問い合わせボタン（Xアイコン付き） -->
+        <div class="contact">
+            <a href="https://x.com/Airis_Pro" target="_blank" rel="noopener" class="contact-link">
+                <img src="images/X.jpg" alt="X Icon" class="x-icon">
+                公式X
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Rҽ:UNioN Animation
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script>
+        // ハンバーガーメニュー開閉
+        const menuToggle = document.getElementById("menu-toggle");
+        const siteNav = document.getElementById("site-nav");
+
+        menuToggle.addEventListener("click", () => {
+            siteNav.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
