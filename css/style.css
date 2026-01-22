@@ -1070,28 +1070,28 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 @media (max-width: 767px) {
     .site-nav ul {
         display: flex;
-        flex-direction: column;  /* 縦並び */
-        gap: 10px;
+        flex-direction: row;    /* ← 横並びに変更 */
+        gap: 10px;             /* 項目間のスペース */
         padding: 0;
         margin: 0;
-        align-items: stretch;    /* 親を伸ばす */
+        justify-content: center; /* 中央揃え */
+        align-items: center;     /* 高さ揃え */
     }
 
     .site-nav li {
         display: flex;
-        justify-content: center; /* 横中央 */
-        align-items: center;     /* 縦中央 */
-        height: 40px;            /* 全項目の高さ統一 */
+        justify-content: center;
+        align-items: center;
+        height: auto;           /* 高さはコンテンツに合わせる */
         margin: 0;
     }
 
     .site-nav a {
         display: flex;
-        align-items: center;     /* 縦中央 */
-        justify-content: center; /* 横中央 */
-        height: 100%;            /* li に合わせる */
-        line-height: normal;
-        padding: 0 10px;         /* 横余白 */
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;        /* 横余白 */
+        height: auto;
     }
 }
 
