@@ -601,17 +601,13 @@ body.boss-mode {
 }
 
 .site-nav {
-    display: none;
-    /* スマホ時は非表示 */
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    /* 右寄せ */
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px;
-    border-radius: 8px;
-    text-align: right;
-    /* スマホメニュー内も右揃え */
+    display: block;
+    /* ← 常時表示 */
+    position: static;
+    /* ← dropdown解除 */
+    background: none;
+    padding: 0;
+    border-radius: 0;
 }
 
 .site-nav ul {
@@ -636,11 +632,7 @@ body.boss-mode {
 }
 
 .menu-toggle {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
+    display: none !important;
 }
 
 /* メニュー表示時 */
@@ -676,22 +668,14 @@ body.boss-mode {
     }
 }
 
-/* スマホ表示最適化 */
-@media(max-width: 767px) {
-    .site-nav {
-        width: calc(100% - 40px);
-        /* 余白を確保 */
-        max-width: 300px;
-        right: 10px;
-        /* 右端から少し内側 */
-    }
-
-    .site-nav li a {
-        padding: 8px 12px;
-        /* タップしやすく */
-    }
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    /* はみ出し防止 */
+    gap: 12px;
 }
-
 
 /* =========================
    Responsive adjustments
