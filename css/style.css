@@ -600,82 +600,11 @@ body.boss-mode {
     /* ロゴを左に固定 */
 }
 
-.site-nav {
-    display: block;
-    /* ← 常時表示 */
-    position: static;
-    /* ← dropdown解除 */
-    background: none;
-    padding: 0;
-    border-radius: 0;
-}
 
-.site-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.site-nav li {
-    margin-bottom: 10px;
-}
 
-.site-nav li:last-child {
-    margin-bottom: 0;
-}
 
-.site-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-}
-
-.menu-toggle {
-    display: none !important;
-}
-
-/* メニュー表示時 */
-.site-nav.active {
-    display: block;
-}
-
-/* デスクトップ表示 */
-@media(min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .site-nav {
-        display: block;
-        position: static;
-        background: none;
-        padding: 0;
-        text-align: right;
-        /* PCでも右寄せ */
-    }
-
-    .site-nav ul {
-        display: flex;
-        gap: 30px;
-        /* PCは横並び */
-        justify-content: flex-end;
-        /* リスト右寄せ */
-    }
-
-    .site-nav li {
-        margin: 0;
-    }
-}
-
-.site-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    /* はみ出し防止 */
-    gap: 12px;
-}
+   
 
 /* =========================
    Responsive adjustments
@@ -1006,3 +935,4 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     line-height: 1.8;
 
 }
+
