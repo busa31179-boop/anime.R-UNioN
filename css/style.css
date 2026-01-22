@@ -1010,3 +1010,18 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 .site-nav ul {
     align-items: baseline;
 }
+
+/* スマホナビ文字ズレ完全修正 */
+.site-nav ul {
+    align-items: center;
+}
+
+.site-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav a {
+    line-height: 1;
+    padding: 6px 0;
+}
