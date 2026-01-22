@@ -1045,3 +1045,23 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
         padding: 0 2px;         /* 横だけ余白 */
     }
 }
+
+@media (max-width: 767px) {
+    .site-nav ul {
+        align-items: stretch; /* 親を伸ばす */
+    }
+
+    .site-nav li {
+        display: flex;
+        justify-content: center; /* 横中央 */
+        align-items: center;     /* 縦中央 */
+        height: 40px;            /* ナビ項目の高さを統一 */
+    }
+
+    .site-nav a {
+        display: inline-block;
+        line-height: normal;     /* デフォルトに戻す */
+        height: 100%;            /* li に合わせる */
+        padding: 0 5px;          /* 横余白は任意 */
+    }
+}
