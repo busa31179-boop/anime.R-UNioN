@@ -1025,3 +1025,23 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     line-height: 1;
     padding: 6px 0;
 }
+
+@media (max-width: 767px) {
+    .site-nav ul {
+        align-items: center;
+    }
+
+    .site-nav li {
+        display: flex;
+        align-items: center;
+        height: 32px;           /* ← 全項目を同じ高さに固定 */
+    }
+
+    .site-nav a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        line-height: 1;
+        padding: 0 2px;         /* 横だけ余白 */
+    }
+}
