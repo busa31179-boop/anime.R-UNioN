@@ -1004,4 +1004,9 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 .boss-mode #character-desc {
     text-align: left;
     line-height: 1.8;
+
+}
+
+.site-nav ul {
+    align-items: baseline;
 }
